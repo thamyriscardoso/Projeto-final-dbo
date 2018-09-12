@@ -1,0 +1,4 @@
+O projeto será um site onde teremos uma linha do tempo em botões circulares para que o Usuário possa escolher e ver qual a próxima. Vai ter login no site, e isso influenciara no que o usuário logado pode ver e utilizar pros seus estudos e o que não pode. Vale lembrar que após o usuário ver a linha do tempo, terão questões sobre o que leu e dicas para o ENEM. O usuário logado pode escolher qualquer momento da linha do tempo para estudar.
+O usuário deslogado terá apenas 3 períodos da linha do tempo disponíveis para estudar, tendo que faze-los em ordem para liberar o próximo.
+Além do resumo que estará disposto em cada tema, o site contará com a opção de ver mais, que terá disponibilizado: arte, música, livros, filmes e entre outras curiosidades.
+Na pagina de logado terá a sua barra de progresso para saber o quanto da linha do tempo ele já estudou
