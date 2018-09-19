@@ -1,5 +1,8 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 div.row{
-  border-width: thin;b
+  border-width: thin;
   order-style: none;
   border-color: black;
 }
