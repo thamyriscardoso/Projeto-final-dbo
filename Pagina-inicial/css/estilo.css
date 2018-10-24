@@ -35,3 +35,20 @@ footer{
 #bt{
   top: -20px;
 }
+#button{
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   border: 1px solid red;
+   background: red;
+}
+h3{
+  text-align: center;
+}
+.dica1{
+  text-align: right;
+}
+.textodica {
+  margin: 10px;
+  margin-top: -5px;
+}
