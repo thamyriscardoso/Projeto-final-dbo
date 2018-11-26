@@ -1,0 +1,57 @@
+[debug] [2018-11-26T20:49:49.904Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T20:49:49.911Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-11-26T20:49:49.912Z] CLI Version:   6.1.1
+[debug] [2018-11-26T20:49:49.912Z] Platform:      linux
+[debug] [2018-11-26T20:49:49.912Z] Node Version:  v8.12.0
+[debug] [2018-11-26T20:49:49.912Z] Time:          Mon Nov 26 2018 18:49:49 GMT-0200 (-02)
+[debug] [2018-11-26T20:49:49.912Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-26T20:49:49.933Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T20:49:49.934Z] > authorizing via signed-in user
+[debug] [2018-11-26T20:49:49.934Z] [iam] checking project projetolinguaportuguesa-3c93d for permissions ["firebase.projects.get"]
+[debug] [2018-11-26T20:49:49.939Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/projetolinguaportuguesa-3c93d:testIamPermissions  
+
+[debug] [2018-11-26T20:49:51.069Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T20:49:51.073Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/projetolinguaportuguesa-3c93d  
+ 
+[debug] [2018-11-26T20:49:52.032Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/thamyris/Documents/Projeto/Pagina-inicial'...
+[info] 
+[debug] [2018-11-26T20:49:52.039Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/509005608271/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-26T20:49:52.551Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] ✔  hosting: Local server: http://localhost:5010
+[debug] [2018-11-26T22:04:28.668Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T22:04:28.677Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-11-26T22:04:28.677Z] CLI Version:   6.1.1
+[debug] [2018-11-26T22:04:28.678Z] Platform:      linux
+[debug] [2018-11-26T22:04:28.678Z] Node Version:  v8.12.0
+[debug] [2018-11-26T22:04:28.678Z] Time:          Mon Nov 26 2018 20:04:28 GMT-0200 (-02)
+[debug] [2018-11-26T22:04:28.679Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-26T22:04:28.747Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T22:04:28.749Z] > authorizing via signed-in user
+[debug] [2018-11-26T22:04:28.749Z] [iam] checking project projetolinguaportuguesa-3c93d for permissions ["firebase.projects.get"]
+[debug] [2018-11-26T22:04:28.763Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-26T22:04:28.764Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-26T22:04:29.105Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T22:04:29.142Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/projetolinguaportuguesa-3c93d:testIamPermissions  
+
+[debug] [2018-11-26T22:04:30.235Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T22:04:30.242Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/projetolinguaportuguesa-3c93d  
+ 
+[debug] [2018-11-26T22:04:31.205Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/thamyris/Documents/Projeto-dbo'...
+[info] 
+[debug] [2018-11-26T22:04:31.212Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/509005608271/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-26T22:04:31.947Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] ✔  hosting: Local server: http://localhost:5015

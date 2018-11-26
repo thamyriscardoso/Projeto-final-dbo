@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -13,7 +13,7 @@
     <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
     <title>Literando</title>
 </head>
 <body>
@@ -41,19 +41,17 @@
                         <a href="dicas.html">Dicas Enem</a>
                     </li>
                     <li>
-                        <a href="timeline.html">Linha do Tempo</a>
+                        <a href="linhatempo.html">Linha do Tempo</a>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-right">
-                    <div class="form-group">
-                        <input type="text" placeholder="Email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" placeholder="Password" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-success">Entrar</button>
-                    <button type="submit" class="btn btn-success">Cadastrar</button>
-                </form>
+                <li class="nav-item" id="btnLogado">
+                    <button id="logado" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalogin">
+                        Login
+                    </button>
+                    <button style="display:none" id="btnSair" type="button" class="btn btn-primary">
+                        Sair
+                    </button>    
+                </li>
             </div>
         </div>
     </nav>
@@ -103,7 +101,82 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+    </div>
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+            </div>
+            <div class="modal-body d-flex flex-column">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalEntrar">
+                    Entrar
+                </button>
+                <hr>
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalCadastro">
+                    Cadastrar-se
+                </button>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Voltar</button>
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEntrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entrar</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
+                        <span id="msgError">*Email e/ou Senha incorretos.</span>
+                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Cadastre-se</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="*********">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
@@ -111,6 +184,14 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+
  </body>
 </html>
