@@ -1,8 +1,8 @@
 const firebase = require('firebase');
 import {config} from './config.js';
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-}
-export const DATABASE = firebase.database();
-export const AUTH = firebase.auth();
 
+firebase.initializeApp(config);
+
+export const db = firebase.database();
+export const provider = new firebase.auth.GoogleAuthProvider();
+export const auth = firebase.auth();

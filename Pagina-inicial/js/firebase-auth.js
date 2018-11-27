@@ -1,6 +1,6 @@
-import {AUTH} from './firebase.js';
+import {auth} from './firebase.js';
 
-AUTH.onAuthStateChanged(function(user) {
+auth.onAuthStateChanged(function(user) {
     if (user) {
         document.querySelector('#logado').style = 'display: none';
         document.querySelector('#btnSair').style = 'display: block';
@@ -12,14 +12,14 @@ AUTH.onAuthStateChanged(function(user) {
 
 export const getIdUsuario = function() {
     return new Promise(function(resolve) {
-        AUTH.onAuthStateChanged(function(user) {
+        auth.onAuthStateChanged(function(user) {
             resolve(user.uid);
         });
     });
 };
 
 export const login = function(email, senha) {
-    AUTH.signInWithEmailAndPassword(email, senha)
+    auth.signInWithEmailAndPassword(email, senha)
         .then(function() {
             window.location.replace('index.html');
         })
@@ -29,7 +29,7 @@ export const login = function(email, senha) {
 };
 
 export const logout = function() {
-    AUTH.signOut()
+    auth.signOut()
         .then(function() {
             document.querySelector('#btnSair').style = 'display: none';
             document.querySelector('#logado').style = 'display: block';
@@ -38,7 +38,7 @@ export const logout = function() {
 };
 
 export const cadastro = function(email, senha) {
-    AUTH.createUserWithEmailAndPassword(email, senha)
+   auth.createUserWithEmailAndPassword(email, senha)
         .then(function() {
             window.location.replace('index.html');
             console.log('sucesso');
@@ -49,7 +49,7 @@ export const cadastro = function(email, senha) {
 };
 
 export const deletar = function() {
-    const USER = AUTH.currentUser;
+    const USER = auth.currentUser;
     USER.delete()
         .then(function() {
             window.location.replace('index.html');
@@ -58,7 +58,7 @@ export const deletar = function() {
 
 export const alterarSenha = function(senha, confirmSenha) {
     if (senha === confirmSenha) {
-        AUTH.currentUser.updatePassword(senha)
+        auth.currentUser.updatePassword(senha)
             .then(function() {
                 console.log('error'); // caso funcione
             })
