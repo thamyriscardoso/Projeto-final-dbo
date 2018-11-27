@@ -1,75 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="pt-BR">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Linha do tempo</title>
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Literando</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="perfil.html">Perfil</a>
-                    </li>
-                    <li>
-                        <a href="dicas.html">Dicas Enem</a>
-                    </li>
-                    <li class="active">
-                        <a href="linhatempo.html">Linha do Tempo</a>
-                    </li>
-                </ul>
-                <div class="container">
-                    <div class="usuario">
-                        <div class="logado">
-                            <div class="dropdown">
-                                <button class="btn btn-primary btn-sm dropdown-toggle username" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                    <img src="#" width="40px" height="40px"
-                                        class="rounded-circle">
-                                    &nbsp;
-                                    <span>Username</span>
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="perfil.html">
-                                        Meu perfil
-                                    </a>
-                                    <a class="dropdown-item sair" href="index.html">
-                                        Sair
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="naologado">
-                            <a class="btn btn-block btn-social btn-google btn-sm w-50" style="color: white;">
-                                <span class="fa fa-google"></span>
-                                Entrar com Google
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Literando</a>
+            </li>
+        </ul>
     </nav>
     <div id="fullpage">
         <div class="section active" id="section0">
@@ -96,13 +43,28 @@
             </div>
             <div class="slide" id="slide03">
                 <div class="intro">
-                    <h1>Autores e Obras do Quinhentismo</h1>
                     <div class="container">
-                          A obra desse período que mais se destaca é a "Carta de Pero Vaz de Caminha" ao Rei de Portugal.
+                        <h1>Autores e Obras do Quinhentismo</h1>
+                        <li>
+                            Pero Vaz de Caminha. <br>
+                            Principais obras : Carta de Pero Vaz de Caminha
+
+                        </li>
+                        <li>
+                            José de Anchieta. <br/>
+                            Principais obras: Arte de gramática da língua mais usada na costa do Brasil e Poema à virgem.
+                        </li>
+                        <li>
+                            Pero de Magalhães Gândavo<br/>
+                            Principais obras: História da província de Santa Cruz a que vulgarmente chamamos de Brasil e O Tratado da Terra do Brasil
+                        </li>
+                        <li>
+                            Manuel da Nóbrega<br>
+                            Principais obras: Informação da Terra do Brasil,Diálogo sobre a conversão do gentio e Tratado contra a Antropofagia.
+                        </li>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="section" id="section1">
             <div class="slide active" id="slide10">
@@ -140,8 +102,8 @@
                     </div>
                 </div>
             </div>
-          </div>
-          <div class="section" id="section2">
+        </div>
+        <div class="section" id="section2">
                 <div class="slide active" id="slide21">
                     <div class="intro">
                         <h1>Arcadismo</h1>
@@ -173,12 +135,28 @@
                     <div class="intro">
                         <h1>Autores e obras do Arcadismo</h1>
                         <div class="container">
-                              A obra desse período que mais se destaca é a "Carta de Pero Vaz de Caminha" ao Rei de Portugal.
+                            <li>
+                                Cláudio Manuel da Costa <br>
+                                Principais obras : Obras Poéticas e Villa Rica
+            
+                            </li>
+                            <li>
+                                José de Santa Rita Durão  <br/>
+                                Principais obras: Pro anmia studiorum instauratione oratio e Caramuru.
+                            </li>
+                            <li>
+                                José Basílio da Gama<br/>
+                                Principais obras: O Uraguai , Epitalâmio às Núpcias da Senhora Dona Maria Amália, A Declamação Trágica e Quitúbia.
+                            </li>
+                            <li>
+                                Tomás Antônio Gonzaga<br>
+                                Principais obras: Marília de Dirceu e Cartas Chilenas.
+                            </li>
                         </div>
                     </div>
                 </div>
-         </div>
-         <div class="section" id="section3">
+        </div>
+        <div class="section" id="section3">
             <div class="slide active" id="slide31">
                 <div class="intro">
                     <h1>Romantismo</h1>
@@ -213,44 +191,42 @@
                   <h1>Autores e obras do Romantismo</h1>
                   <div class="container">
                     <li>
-                      Gonçalves Dias - foi um importante poeta brasileiro do século XIX.
-                      Principais obras: Os timbiras, Meditação, Canção do Exílio, I-Juca-Pirama, Seus Olhos .
+                      Gonçalves Dias<br>
+                      Principais obras: Os timbiras, Meditação, Canção do Exílio, I-Juca-Pirama e Seus Olhos .
                     </li>
                     <li>
-                      Álvares de Azevedo - escritor da Segunda Geração Romântica.
-                      Principais obras: Lira dos Vinte Anos, Noite na Taverna.
+                      Álvares de Azevedo. <br>
+                      Principais obras: Lira dos Vinte Anos e Noite na Taverna.
                     </li>
                     <li>
-                      <p>
-                      Castro Alves - importante poeta brasileiro da geração condoreira.<br/>
-                      Principais obras: Espumas Flutuantes, Os escravos, A Cachoeira de Paulo Afonso, Hinos do equador, Tragédia no Mar, O Navio Negreiro."
-                    </p>
+                      Castro Alves <br/>
+                      Principais obras: Espumas Flutuantes, Os escravos, A Cachoeira de Paulo Afonso, Hinos do equador, Tragédia no Ma e  O Navio Negreiro."
                     </li>
                     <li>
                       Joaquim Manuel de Macedo. <br>
-                      Principais obras: A Moreninha, O Moço Loiro, O Rio do Quarto, A luneta mágica.
+                      Principais obras: A Moreninha, O Moço Loiro, O Rio do Quarto e A luneta mágica.
                     </li>
                     <li>
-                      José de Alencar - considerado o principal escritor do romantismo brasileiro.
-                      Principais obras: Cinco Minutos, A Viuvinha, O Guarani, Lucíola, Iracema, As Minas de Prata, Senhora, Encarnação.
+                      José de Alencar<br>
+                      Principais obras: Cinco Minutos, A Viuvinha, O Guarani, Lucíola, Iracema, As Minas de Prata, Senhora e Encarnação.
                     </li>
                     <li>
-                      Manuel Antônio de Almeida
-                      Principais obras: Memórias de um sargento de milícias, Dois Amores (peça de teatro).
+                      Manuel Antônio de Almeida.<br>
+                      Principais obras: Memórias de um sargento de milícias e Dois Amores (peça de teatro).
                     </li>
                     <li>
-                      Bernardo Guimarães - romancista e poeta.
+                      Bernardo Guimarães.<br>
                       Principais obras: O seminarista e A escrava Isaura.
                     </li>
                     <li>
-                      Franklin Távora - iniciou o romantismo regionalista no Nordeste.
-                      Principais obras: Trindade maldita, Os índios do Jaguaribe; A casa de palha; Três lágrimas.
+                      Franklin Távora. <br>
+                      Principais obras: Trindade maldita, Os índios do Jaguaribe, A casa de palha e Três lágrimas.
                     </li>
                   </div>
                 </div>
             </div>
-         </div>
-         <div class="section active" id="section4">
+        </div>
+        <div class="section active" id="section4">
             <div class="slide active" id="slide41">
                 <div class="intro">
                     <h1>Realismo e Naturalismo</h1>
@@ -283,42 +259,42 @@
                 </div>
             </div>
          </div>
-       </div>
-       <div class="section active" id="section5">
-          <div class="slide active" id="slide51">
-              <div class="intro">
-                  <h1>Parnasianismo</h1>
-              </div>
-          </div>
-          <div class="slide" id="slide52">
-              <div class="intro">
-                <h1>Características do Parnasianismo</h1>
-                <div class="container">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-              </div>
-          </div>
-          <div class="slide" id="slide53">
-              <div class="intro">
-                <h1>Autores e obras do Parnasianismo</h1>
-                <div class="container">
-
+        </div>
+        <div class="section active" id="section5">
+            <div class="slide active" id="slide51">
+                <div class="intro">
+                    <h1>Parnasianismo</h1>
                 </div>
-              </div>
-          </div>
-       </div>
-     </div>
-     <div class="section active" id="section6">
+            </div>
+            <div class="slide" id="slide52">
+                <div class="intro">
+                    <h1>Características do Parnasianismo</h1>
+                    <div class="container">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide53">
+                <div class="intro">
+                    <h1>Autores e obras do Parnasianismo</h1>
+                    <div class="container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section active" id="section6">
            <div class="slide active" id="slide61">
                <div class="intro">
                    <h1>Simbolismo</h1>
@@ -326,23 +302,24 @@
            </div>
            <div class="slide" id="slide62">
                <div class="intro">
-                 <h1>Características do Simbolismo</h1>
-                 <div class="container">
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-               </div>
-           </div>
-           <div class="slide" id="slide63">
+                    <h1>Características do Simbolismo</h1>
+                    <div class="container">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide63">
                <div class="intro">
                  <h1>Autores e obras do Simbolismo</h1>
                  <div class="container">
@@ -351,111 +328,116 @@
                </div>
            </div>
         </div>
-     </div>
-     <div class="section active" id="section7">
-         <div class="slide active" id="slide71">
-             <div class="intro">
-                 <h1>Neorealismo</h1>
-             </div>
-         </div>
-         <div class="slide" id="slide72">
-             <div class="intro">
-               <h1>Características do Neorealismo</h1>
-               <div class="container">
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-                     <li></li>
-             </div>
-         </div>
-         <div class="slide" id="slide73">
-             <div class="intro">
-               <h1>Autores e obras do Neorealismo</h1>
-               <div class="container">
+        <div class="section active" id="section7">
+            <div class="slide active" id="slide71">
+                <div class="intro">
+                    <h1>Neorealismo</h1>
+                </div>
+            </div>
+            <div class="slide" id="slide72">
+                <div class="intro">
+                    <h1>Características do Neorealismo</h1>
+                    <div class="container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide73">
+                <div class="intro">
+                    <h1>Autores e obras do Neorealismo</h1>
+                    <div class="container">
 
-               </div>
-             </div>
-         </div>
-      </div>
-   </div>
-   <div class="section active" id="section8">
-       <div class="slide active" id="slide81">
-           <div class="intro">
-               <h1>Pré-Modernismo</h1>
-           </div>
-       </div>
-       <div class="slide" id="slide82">
-           <div class="intro">
-             <h1>Características do Pré-Modernismo</h1>
-             <div class="container">
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-                   <li></li>
-           </div>
-       </div>
-       <div class="slide" id="slide83">
-           <div class="intro">
-             <h1>Autores e obras do Pré-Modernismo</h1>
-             <div class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section active" id="section8">
+            <div class="slide active" id="slide81">
+                <div class="intro">
+                    <h1>Pré-Modernismo</h1>
+                </div>
+            </div>
+            <div class="slide" id="slide82">
+                <div class="intro">
+                        <h1>Características do Pré-Modernismo</h1>
+                        <div class="container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                </div>
+                <div class="slide" id="slide83">
+                    <div class="intro">
+                        <h1>Autores e obras do Pré-Modernismo</h1>
+                        <div class="container">
 
-             </div>
-           </div>
-       </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div class="section active" id="section9">
+            <div class="slide active" id="slide91">
+                <div class="intro">
+                    <h1>Modernismo</h1>
+                </div>
+            </div>
+            <div class="slide" id="slide92">
+                <div class="intro">
+                    <h1>Características do Modernismo</h1>
+                    <div class="container">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide93">
+                <div class="intro">
+                    <h1>Autores e obras do Modernismo</h1>
+                    <div class="container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
- </div>
- <div class="section active" id="section9">
-     <div class="slide active" id="slide91">
-         <div class="intro">
-             <h1>Modernismo</h1>
-         </div>
-     </div>
-     <div class="slide" id="slide92">
-         <div class="intro">
-           <h1>Características do Modernismo</h1>
-           <div class="container">
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-                 <li></li>
-         </div>
-     </div>
-     <div class="slide" id="slide93">
-         <div class="intro">
-           <h1>Autores e obras do Modernismo</h1>
-           <div class="container">
-
-           </div>
-         </div>
-     </div>
-  </div>
-</div>
-  </div>
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript" src="js/fullpagestyle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"                 integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/fullpagestyle.js"></script>
 </body>
 </html>
