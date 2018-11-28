@@ -38,7 +38,7 @@ export const logout = function() {
 };
 
 export const cadastro = function(email, senha) {
-   auth.createUserWithEmailAndPassword(email, senha)
+    auth.createUserWithEmailAndPassword(email, senha)
         .then(function() {
             window.location.replace('index.html');
             console.log('sucesso');
